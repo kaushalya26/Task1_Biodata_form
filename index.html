@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><div class="header">
+    <h1>Personal Information</h1>
+   
+    <form onsubmit="handleSubmit(event)">
+        
+        <label>FullName :</label><span>*</span>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your fullname" required/>
+<br/>
+        <label>Date of Birth </label><span>*</span>
+        <input type="date" id="dob" name="dob" required />
+<br/>
+        <label>Gender</label><span>*</span>
+        <select id="gender" name="gender" required >
+        <option value="">Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+        </select>
+        <br/>
+        <label>Email</label><span>*</span>
+        <input type="email" id="email" name="email" placeholder="eg:john@gmail.com" required>
+<br/>
+        <label>Phone Number</label><span>*</span>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" maxlength="10" placeholder="eg:9283747382" required>
+<br/>
+        
+        <label>Address</label><span>*</span>
+        <textarea id="address" name="address" placeholder="Enter your Address" maxlength="200"  required></textarea>
+        
+<br/>
+
+        
+        <label>Nationality</label>
+        
+        <input type="text" id="nationality" name="nationality" placeholder="eg:India">
+<br/>
+        <label>Marital Status</label>
+
+        <select id="marital" name="marital">
+            <option value="">Select Marital Status</option>
+            <option value="single"> Single</option>
+            <option value="Married">Married</option>
+            <option value="other">Other</option>
+        </select>
+     <br/>   
+        <label>Profile Photo</label>
+        <input type="file" id="profile" name="profile" accept=".jpg, .jpeg, .png" >
+        <small>jpg/png/jpeg file only,Max 2MB </small>
+<br/><br/>
+        <p id="message"></p>
+        <br/>
+        <button type="submit" onclick="handleSubmit(event)">Submit</button>
+        <button type="reset" onclick="handleReset()">Reset</button>
+    </form>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>
