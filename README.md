@@ -1,6 +1,6 @@
-#BioData 
- A simple web form for collecting personal information from User
-
-#project files
-Bio.html =>structure of the form fields
-style.css => style and designing of the form
+#Biodata
+ Collecting personal data form the user
+#files
+ index.html -> Structure of the form and field
+ style.css-> Style and design of the form
+ script.js -> to handle form functionality
